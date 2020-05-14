@@ -1,0 +1,131 @@
+experiência com as mobilidades e os moves:
+
+Geracao 1:
+O vencedor foi:
+7: [0,484;-0,484;-0,355
+;0,161]
+
+Geracao 2:
+O vencedor foi:
+21: [-0,032;-0,742;0,677
+;-0,161]
+
+Geracao 3:
+O vencedor foi:
+41: [0,355;-0,355;0,097
+;-0,742]
+
+Geracao 4:
+O vencedor foi:
+76: [0,806;-0,290;-0,484
+;0,613]
+
+Geracao 5:
+O vencedor foi:
+85: [0,419
+;-0,742;1,000;-0,548
+]
+
+Geracao 6:
+O vencedor foi:
+105: [0,613
+;-0,742;0,677;-0,161
+]
+
+Geracao 7:
+O vencedor foi:
+136: [-0,290;-0,871;0,484
+;0,290]
+
+Geracao 8:
+O vencedor foi:
+151: [-0,935
+;-0,742;0,484;0,290
+]
+
+Geracao 9:
+O vencedor foi:
+173: [-1,000;0,548;-0,226
+;1,000]
+
+Geracao 10:
+O vencedor foi:
+181: [0,806;0,806;-0,226
+;0,484]
+
+Geracao 11:
+O vencedor foi:
+209: [-0,935;-0,742
+;0,677;-0,161]
+
+Geracao 12:
+O vencedor foi:
+223: [0,097;-0,742
+;0,677;-0,161]
+
+Geracao 13:
+O vencedor foi:
+248: [-1,000
+;0,806;-0,226;0,484
+]
+
+Geracao 14:
+O vencedor foi:
+261: [-0,935;-0,742;-0,355
+;-0,161]
+
+Geracao 15:
+O vencedor foi:
+281: [-1,000;0,806;-0,226
+;0,226]
+
+Geracao 16:
+O vencedor foi:
+301: [0,613;-0,742;-0,355
+;-0,161]
+
+Geracao 17:
+O vencedor foi:
+330: [-1,000;0,806;-0,226
+;0,484]
+
+Geracao 18:
+O vencedor foi:
+341: [-1,000;-0,226;-0,226
+;0,484]
+
+Geracao 19:
+O vencedor foi:
+364: [-0,742;0,806;-0,226
+;0,484]
+
+Geracao 20:
+O vencedor foi:
+386: [-0,742;0,290
+;0,806;0,484]
+
+Geracao 21:
+O vencedor foi:
+404: [0,032;0,806;-0,226
+;0,484]
+
+Geracao 22:
+O vencedor foi:
+423: [-1,000;0,806
+;-0,226;0,484]
+
+Geracao 23:
+O vencedor foi:
+447: [-1,000;0,806;-0,226
+;0,484]
+
+Geracao 24:
+O vencedor foi:
+475: [0,097;-0,742
+;0,677;-0,161]
+
+Geracao 25:
+O vencedor foi:
+483: [0,032;0,935
+;-0,226;1,000]
+

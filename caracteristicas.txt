@@ -1,0 +1,1 @@
+[minha_mobilidade,mobilidade_dele,meus_moves_possiveis,moves_possiveis_dele,minhasPodeComerDuas,delePodeComerDuas,meuNumeroPecas,deleNumeroPecas,meusCantosDaCor,deleCantosDaCor,minhasParedes,deleParedes]
