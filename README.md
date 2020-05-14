@@ -37,7 +37,7 @@ The files where information is stored are:
 - vencedores.txt: the winners information in textual format.
 - vencedores.bin: the winners information is saved in binary for easier loading.
 - pesos.bin: the last generation weights are saved in binary mode.
-- parametros: are stored in textual format the values of: population size, size and number of genes, mutation rate, cutoff point, weights generation range and features previously selected by user.
+- parametros: are stored in textual format the values of population size, size and number of genes, mutation rate, cutoff point, weights generation range and features previously selected by user.
 
 ## Usage
 To execute our program, are available two files with the extension *.bat* (the *server.bat* must be the first to be executed and followed by the *client.bat*).
@@ -46,13 +46,13 @@ To execute our program, are available two files with the extension *.bat* (the *
 
 When executing the Java interface, one of the buttons is called `"Carregar população"` and it is used to load the population.´
 
-When you press this button, if one of the files (*parametros*, *pesos.bin* or *vencedores.bin*) does not exist, it is given a message that a game may not have been previously saved. Thus, The first time the program is run, it is necessary to click on the `"Encontrar melhor jogador"` button.
+When you press this button, if one of the files (*parametros*, *pesos.bin* or *vencedores.bin*) does not exist, it is given a message that a game may not have been previously saved. Thus, the first time the program is run, it is necessary to click on the `"Encontrar melhor jogador"` button.
 
 You can stop the game at any time (exit the Java client and turn off the Prolog server). When you start up again with the Prolog server and then the Java client, you can click on the `"Carregar população"` button. A dialog box will appear asking you to enter the number of generations you want (values in text boxes `"Tamanho da população"` and `"Número de gerações"` are ignored).
 
 To give an example, let's imagine that the first time you run the application you give an input of 50 generations and decided to stop the program at the 20th generation. Next time you run the application, if you enter 50 generations, it will calculate 30 more (if you want you can enter more or less generations than the first time, except a value that is less than or equal to the number of generations already calculated). For example, in this case if you enter a value less than or equal to 20 the program will not continue calculating generations.
 
-It should be noted that, even when the program computes all the generations entered, as long as the *pesos.bin*, *vencedores.bin* and *parametros* files are not deleted, it is possible to make more generations on the weights that were computed, which allows it to continue to improve a player for the generations you want.
+It should be noted that, even when the program computes all the generations entered, as long as the *pesos.bin*, *vencedores.bin* and *parametros* files are not deleted, it is possible to calculate more generations on the weights that were computed, which allows it to continue to improve a player for the generations you want.
 
 It should also be noted that if you have saved a game previously and in a later run click on `"Encontrar melhor jogador"`, the files from the previous calculation/run are lost, so you will have to save them elsewhere if you wish (*pesos.bin*, *vencedores.bin* and *parametros* files). Later, you can copy them back to the root of the project and continue to improve the player you had started.
 
@@ -67,7 +67,7 @@ If you want to run a game other than Konane, perform the following steps to chan
 	meusCantosDaCor,deleCantosDaCor,minhasParedes,deleParedes])`, replace the list elements in this `write` predicate with the exact names of the predicates that were implemented in the **geneticos/konane/osjogadores.pl** file. These predicates correspond to the characteristics that the user intends to consider in the new game.
 3. It should be noted that, due to the implementation of the *ExtendedBitSet* class of the gajit library (genetic algorithms in Java), the bit string of each chromosome cannot be longer than 64 bits. As we are using genes with size of 5 bits, we cannot have more than 12 characteristics in the list of characteristics given to `write` in predicate `arranque/0`.
 4. When we start the Prolog server, it will write to the file *caracteristicas.txt* (at the root of the project) the list of characteristics, which will be loaded into the list box of the Java interface when running the Java program (obviously it is necessary to start the Prolog server first and then the Java program).
-5. Before starting the Prolog server, it will be necessary to check the file corresponding to the new game that was implemented. For this, in predicate `initial/0` of the **geneticos/konane/ojogo.pl** file, replace `consult (oKonane)` with `consult(<Prolog_game_implemented_file>)`. Now it is possible to start the Prolog server and then the Java client.
+5. Before starting the Prolog server, it will be necessary to check the file corresponding to the new game that was implemented. For this, in predicate `initial/0` of the **geneticos/konane/ojogo.pl** file, replace `consult(oKonane)` with `consult(<Prolog_game_implemented_file>)`. Now it is possible to start the Prolog server and then the Java client.
 
 ### For changing the weights generation interval
 
@@ -85,9 +85,9 @@ The user can also change the depth level of the alpha-beta algorithm in **geneti
 To do this, just go to the predicate `jogar_um_contra_todos/1` and change the second argument in `minicamp` call.
 
 ## Roadmap
-Addition of the weights generation interval to the Java interface.
+- Addition of the weights generation interval to the Java interface.
 
-Prevent loss of files *pesos.bin*, *vencedores.bin* and *parametros* when two consecutive clicks occur in the button `"Encontrar melhor jogador"`. For that, it is necessary to save all the players that were being evolved during the first calculation/run, presenting the user a list with all of them so that he can choose which one the user pretends to continue to evolve at that point.
+- Prevent loss of files *pesos.bin*, *vencedores.bin* and *parametros* when two consecutive clicks occur in the button `"Encontrar melhor jogador"`. For that, it is necessary to save all the players that were being evolved during the first calculation/run, presenting the user a list with all of them so that he can choose which one the user pretends to continue to evolve at that point.
 
 ## Support
 Email contact: zizo2@sapo.pt
